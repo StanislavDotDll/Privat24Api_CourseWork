@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+AIzaSyDylkmhFJEQp8C7bTxboz06d24liYaQaFc
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDylkmhFJEQp8C7bTxboz06d24liYaQaFc&callback=initMap&libraries=&v=weekly" defer>
+    </script>
+
+ 
+
+</head>
+
+<body>
+    <h1>Privat24</h1>
+    <h2>Знайти відділення :</h2>
+    <div class="findIt">
+        <input type="text" placeholder="Index">
+        <button>🔍</button>
+        <p>
+            <select name="countries[]">
+                <option value="UA-43">Avtonomna Respublika Krym</option>
+                <option value="UA-71">Cherkasy</option>
+                <option value="UA-74">Chernihiv</option>
+                <option value="UA-77">Chernivetsk</option>
+                <option value="UA-12">Dnipropetrovsk</option>
+                <option value="UA-14">Donetsk</option>
+                <option value="UA-26">Ivano-Frankivsk </option>
+                <option value="UA-63">Kharkiv </option>
+                <option value="UA-65">Kherson</option>
+                <option value="UA-68">Khmelnytsk </option>
+                <option value="UA-35">Kirovohradsk </option>
+                <option value="UA-30">Kyiv</option>
+                <option value="UA-09">Luhansk</option>
+                <option value="UA-46">Lviv</option>
+                <option value="UA-48">Mykolaiv</option>
+                <option value="UA-51">Odesa</option>
+                <option value="UA-53">Poltava</option>
+                <option value="UA-56">Rivne</option>
+                <option value="UA-40">Sevastopol</option>
+                <option value="UA-59">Sumy</option>
+                <option value="UA-61">Ternopil</option>
+                <option value="UA-05">Vinnytsia</option>
+                <option value="UA-07">Volyn</option>
+                <option value="UA-21">Zakarpatia</option>
+                <option value="UA-23">Zaporizia</option>
+                <option value="UA-18">Zhytomyr</option>
+            </select>
+        </p>
+    </div>
+    <br>
+    <br>
+    <div id="map"></div>
+    <script src="script.js"></script>
+
+
+</body>
+lat: -34.867, lng: 151.195
+
+<script>
+  
+
+
+  
+
+  var settings = {
+  "url": "https://api.privatbank.ua/p24api/infrastructure?json&atm&address=&city=",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+
+</script>
+</html>
