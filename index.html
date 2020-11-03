@@ -4,45 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <meta name="Access-Control-Allow-Headers" content="*" />
-    <meta name="Access-Control-Allow-Origin" content="*" />
+    <title>Privat24 ATM's</title>
     <link href="style.css" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDylkmhFJEQp8C7bTxboz06d24liYaQaFc&callback=initMap&libraries=&v=weekly"
         defer>
     </script>
-
-
-
 </head>
 
 <body>
-
-    <h1>Privat24</h1>
-    <h2>Знайти відділення :</h2>
-    <div class="findIt">
-        <input id="searchText" type="text" placeholder="Index">
-        <button onclick="search()">🔍</button>
-    </div>
-    <br>
-    <br>
-    <div id="map"></div>
-    <script src="script.js"></script>
-
-    <h2 class="AtmInfoH2" id="CityName"></h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="AtmInfo" id="ATMs">
-        <div class="Atm">ATM Bулиця Червона Площа,будинок 7</div>
-
-    </div>
+    <h1>Privat24</h1=>
+        <h2>Знайти ATM :</h2>
+        <div class="findIt">
+            <input id="searchText" type="text" placeholder="Index">
+            <button onclick="search()">🔍</button>
+        </div>
+        <br><br>
+        <div id="map"></div>
+        <script src="script.js"></script>
+        <h2 class="AtmInfoH2" id="CityName"></h2>
+        <br><br><br><br>
+        <div class="AtmInfo" id="ATMs">
+        </div>
 </body>
-
-
 
 </html>
